@@ -1,0 +1,10 @@
+<p>获取到路由传递的值: {{{data.index}}}</p>
+<div>
+    <a href="/index" class="header_box_pc_a">首页</a>
+    <a href="/case" class="header_box_pc_a">列表页</a>
+</div>
+
+<script>
+    var getRoutesData = {{ data.index }};
+    console.log(getRoutesData?'获取到路由传递的值！':'未获取到路由传递的值！');
+</script>
